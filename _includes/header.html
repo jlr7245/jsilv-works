@@ -1,0 +1,14 @@
+<header class="site-header" role="banner">
+    <div class='terminalink'>
+      <h1>open jsilv.terminal</h1>
+    </div>
+    <nav>
+      <ul class="navigation">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+    </nav>
+</header>

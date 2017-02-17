@@ -1,0 +1,43 @@
+.bigwrap {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ============================== HEADER AND NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10vw;
+  ul {
+    display: flex;
+    li {
+      a {
+        padding: 15px;
+        color: black;
+        text-decoration: none;
+        &:hover {
+          border-bottom: 3px solid blue;
+        }
+      }
+      .active {
+        background-color: #eee;
+      }
+    }
+  }
+}
+
+main {
+  min-height: 80vh;
+  flex: 1;
+}
+
+.footerfix {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  color: white;
+}

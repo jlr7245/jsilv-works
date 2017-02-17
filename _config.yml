@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+
+
+# Site settings
+
+title: J Silverstein
+email: j@jsilv.com
+description: > 
+  The digital home of J Silverstein, a developer and designer in New York.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: _cetaceans
+github_username:  jlr7245
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
