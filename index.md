@@ -3,6 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
+title: "Home"
 ---
 
 J is a formally trained designer masquerading as a developer, or possibly the other way around, she isn't quite sure. Either way, she loves both designing the look and feel of something new and building it out to its completion.
