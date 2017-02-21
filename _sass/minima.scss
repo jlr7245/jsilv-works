@@ -1,5 +1,5 @@
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-family: "aktiv-grotesk", Helvetica, Arial, sans-serif !default;
+$base-font-size:   18px;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -51,7 +51,8 @@ $on-laptop:        800px !default;
 }
 
 .wrapper {
-  max-width: 80vw;
+  max-width: 1000px;
+  width: 80vw;
   box-sizing: border-box;
   flex: 1;
   display: flex;
@@ -73,6 +74,7 @@ header {
         text-decoration: none;
         &:hover {
           border-bottom: 3px solid blue;
+          text-decoration: none;
         }
       }
       .active {
@@ -125,6 +127,18 @@ main {
       }
       .nerdy {
         color: $brand-color;
+      }
+      .bigname {
+        font-size: 5em;
+        @media screen and (max-width: 1000px) {
+          font-size: 2em;
+        }
+      }
+    }
+    .content {
+      @media screen and (min-width: 1000px) {
+        font-size: 1.3em;
+        margin-left: 70px;
       }
     }
   }
