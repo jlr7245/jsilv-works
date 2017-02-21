@@ -1,5 +1,27 @@
-$base-font-family: "aktiv-grotesk", Helvetica, Arial, sans-serif !default;
-$base-font-size:   18px;
+@font-face {
+    font-family: 'romana_btbold';
+    src: url('./fonts/bitstream_-_romana_bt_bold-webfont.woff2') format('woff2'),
+         url('./fonts/bitstream_-_romana_bt_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'romana_btroman';
+    src: url('./fonts/bitstream_-_romana_bt_roman-webfont.woff2') format('woff2'),
+         url('./fonts/bitstream_-_romana_bt_roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+$base-font-family: "aktiv-grotesk", Helvetica, Arial, sans-serif;
+$header-f: 'romana_btroman', georgia, serif;
+$header-b: 'romana_btbold', georgia, serif;
+$base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
@@ -93,9 +115,13 @@ main {
 
 .footerfix {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: blue;
+  bottom: -5px;
+  left: -5px;
+  padding: 125px 0px 0px 25px;
+  box-sizing: border-box;
+  background-image: url('./footer-blue.svg');
+  height: 268px;
+  width: 268px;
   color: white;
 }
 
@@ -129,7 +155,8 @@ main {
         color: $brand-color;
       }
       .bigname {
-        font-size: 5em;
+        font-size: 6em;
+        font-family: $header-f;
         @media screen and (max-width: 1000px) {
           font-size: 2em;
         }
