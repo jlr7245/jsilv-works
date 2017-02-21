@@ -16,11 +16,21 @@
 
 }
 
+@font-face {
+    font-family: 'pxplus-ibm-vga';
+    src: url('./fonts/pxp.woff2') format('woff2'),
+         url('./fonts/pxp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 
 $base-font-family: "aktiv-grotesk", Helvetica, Arial, sans-serif;
 $header-f: 'romana_btroman', georgia, serif;
 $header-b: 'romana_btbold', georgia, serif;
+$monospace: 'pxplus-ibm-vga', operator mono, courier, mono;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -29,7 +39,7 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #fdfdfd !default;
+$background-color: #ffffff;
 $brand-color:      #012EFC;
 $brand-2:          #CBFDCA;
 
@@ -94,6 +104,10 @@ header {
         padding: 15px;
         color: black;
         text-decoration: none;
+        font-family: $monospace;
+        &:visited {
+          color: black;
+        }
         &:hover {
           border-bottom: 3px solid blue;
           text-decoration: none;
@@ -152,6 +166,7 @@ main {
         display: block;
       }
       .nerdy {
+        font-family: $monospace;
         color: $brand-color;
       }
       .bigname {

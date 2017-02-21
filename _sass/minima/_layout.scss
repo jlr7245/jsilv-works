@@ -160,6 +160,7 @@
 
 .page-heading {
   font-size: 20px;
+  font-family: $header-f;
 }
 
 .post-list {
@@ -179,6 +180,7 @@
 .post-link {
   display: block;
   font-size: 24px;
+  font-family: $header-f;
 }
 
 
@@ -192,8 +194,8 @@
 
 .post-title {
   font-size: 42px;
-  letter-spacing: -1px;
   line-height: 1;
+  font-family: $header-f;
 
   @include media-query($on-laptop) {
     font-size: 36px;
