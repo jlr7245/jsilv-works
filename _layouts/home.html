@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class='home-top'>
+    <div class='image'>
+      <img src='{{ "/assets/self.svg" | relative_url }}' />
+    </div>
+
+    <div class='homecopy'>
+      <div class='intro'>
+        <span class='top nerdy'>Hello World! ...</span>
+        <span class='top nerdy'>You've reached the digital home of...</span>
+        <span class='top bigname'>J Silverstein</span>
+      </div>
+      <div class='content'>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <div class='home-bottom'>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>

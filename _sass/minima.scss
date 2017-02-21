@@ -1,8 +1,61 @@
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #012EFC !default;
+$brand-2:          #CBFDCA;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    1500px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;
+
+
+//========== J CSS
+
 .bigwrap {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 80vw;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ============================== HEADER AND NAV */
@@ -32,6 +85,8 @@ header {
 main {
   min-height: 80vh;
   flex: 1;
+  display: flex !important;
+  flex-direction: column;
 }
 
 .footerfix {
@@ -41,3 +96,44 @@ main {
   background-color: blue;
   color: white;
 }
+
+//======================== HOME
+
+.home {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.home-top {
+  display: flex;
+  flex: 5;
+  align-items: center;
+  .image {
+    flex: 1;
+  }
+  .homecopy {
+    flex: 2;
+    .intro {
+      .top {
+        display: block;
+      }
+      .nerdy {
+        color: $brand-color;
+      }
+    }
+  }
+}
+
+.home-bottom {
+  display: flex;
+  flex: 1;
+  .post-list {
+    display: flex;
+    flex: 1;
+    min-width: 320px;
+    li {
+      flex: 1;
+    }
+  }
+}
+
