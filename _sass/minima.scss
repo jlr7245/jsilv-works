@@ -134,9 +134,31 @@ main {
   padding: 125px 0px 0px 25px;
   box-sizing: border-box;
   background-image: url('./footer-blue.svg');
-  height: 268px;
-  width: 268px;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
   color: white;
+  a {
+    color: white;
+  }
+  i {
+    color: $brand-2;
+    font-size: 1.2em;
+    transition: 0.5s all;
+    &:hover {
+      transform: scale(1.5,1.5);
+      transition: 0.5s all;
+    }
+  }
+  .phone-email {
+    margin-top: 10px;
+    .fixed-w {
+      display: block;
+      font-family: $monospace;
+      margin-bottom: 8px;
+      font-size: 0.8em;
+    }
+  }
 }
 
 //======================== HOME
