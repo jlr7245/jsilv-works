@@ -12,15 +12,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _cetaceans
 github_username:  jlr7245
 
+
+
 # Build settings
 markdown: kramdown
 permalink: pretty
 theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
 collections:
   project:
     output: true
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
