@@ -2,7 +2,7 @@
 layout: project
 title: CallCongress.how (Version 2)
 date: 2017-02-28 08:29:35 -0500
-order: 3
+order: 1
 ---
 
 # CallCongress.How (Version 2)
@@ -11,7 +11,7 @@ order: 3
 
 ## What is CallCongress.How?
 
-This is a rebuild of my previous CallCongress project with a more robust API and 
+This is a rebuild of my previous CallCongress project with a more robust API and a better database system.
 
 ## Technical Discussion
 
@@ -95,8 +95,8 @@ function manipulateBills(req, res, next) {
 ```
 
 ```html
-// Finally, the information is sent back to the component,
-// where it renders in the appropriate subcomponent.
+<!-- Finally, the information is sent back to the component,
+ where it renders in the appropriate subcomponent. -->
 <div className='bills-list'>
   {(this.state.active == 'senate') ? 
   <BillList laws={this.state.senateInfo} 
