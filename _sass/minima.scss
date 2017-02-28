@@ -99,6 +99,9 @@ header {
   padding: 20px 10vw;
   ul {
     display: flex;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
     li {
       a {
         padding: 15px;
@@ -158,6 +161,13 @@ main {
       margin-bottom: 8px;
       font-size: 0.8em;
     }
+  }
+  @media screen and (max-width: 800px) {
+    position: relative;
+    width: 100%;
+    background-color: $brand-color;
+    padding: 50px;
+    background-image: none;
   }
 }
 

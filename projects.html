@@ -5,7 +5,8 @@ order: 3
 ---
 
 <ul class="post-list">
-  {% for project in site.project %}
+  {% assign sorted_projects = site.projects | sort:"order" %}
+  {% for project in sorted_projects %}
     <li>
       <span class="post-meta">{{ project.date | date: "%b %-d, %Y" }}</span>
 
