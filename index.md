@@ -7,8 +7,8 @@ title: "Home"
 order: 1
 ---
 
-J is a formally trained designer masquerading as a developer, or possibly the other way around, she isn't quite sure. Either way, she loves both designing the look and feel of something new and building it out to its completion.
+J is a formally trained designer who decided to make the switch to development. Just as comfortable in JavaScript and CSS as she is in Sketch or Photoshop, she loves both designing the look and feel of a new project and building it out to its completion.
 
-She loves mazes, maps, puzzles, science fiction, and her wife.
+She also loves mazes, maps, puzzles, science fiction, and her wife.
 
 Currently, she's looking for the next challenge. Please feel free to get in touch with her.
