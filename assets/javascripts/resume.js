@@ -1,9 +1,11 @@
+console.log('loaded');
+
 (() => {
   let theAssets = document.getElementsByClassName('asset');
   let assetArray = Array.from(theAssets);
   assetArray.forEach((ass) => {
     ass.addEventListener('click', () => switchToSkill(ass.dataset.id));
-  })
+  });
   
   const detTitle = document.getElementById('det');
   const detCont = document.getElementById('cont');
@@ -14,19 +16,20 @@
     detTitle.innerHTML = currentSkill.name;
     detCont.innerHTML = currentSkill.desc;
     expDisplay(i);
-  }
+  };
   
   const expDisplay = (i) => {
     let output = '';
     for (let experience of experiences) {
       if (experience.skills.indexOf(parseInt(i)) !== -1) {
-        output += `<div>
-                      <h3>${experience.name}</h3
+        output += `<div class='resitem'>
+                      <h3>${experience.name}</h3>
+                      <p>${experience.desc}</p>
                    </div>`;
       }
     }
     resItems.innerHTML = output;
-  }
+  };
   
 })();
 
