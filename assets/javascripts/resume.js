@@ -44,27 +44,27 @@ const skills = [
   {
     id: 1,
     name: 'HTML',
-    desc: `I cut my teeth on <i>building</i> Blogger themes back in the day, and have playing around with HTML ever since. I'm also passionate about accessibility in web development, which is something I try to work into my HTML practice.`
+    desc: `I cut my teeth building Blogger themes back in the day, and have playing around with HTML ever since. I'm also passionate about accessibility in web development, which is something I try to work into my HTML practice.`
   },
   {
     id: 2,
     name: 'JavaScript',
-    desc: `Javascript description goes here`
+    desc: `I've used JavaScript in a number of recent projects, both on the front end to enhance user experience and on the server-side with Node and Express.`
   },
   {
     id: 3,
     name: 'ReactJS',
-    desc: 'React description goes here'
+    desc: `I love working with React, and have used it on a number of apps. I'm also familiar with common React design patterns.`
   },
   {
     id: 4,
     name: 'ExpressJS',
-    desc: 'Express description goes here'
+    desc: `A number of my full-stack apps use the Express framework on the server side to handle database requests, authentication, and secure third-party API calls.`
   },
   {
     id: 5,
     name: 'NodeJS',
-    desc: 'Node des goes here'
+    desc: `I'm familiar with using Node for server-side development.`
   },
   {
     id: 6,
