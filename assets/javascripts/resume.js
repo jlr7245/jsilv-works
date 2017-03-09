@@ -186,3 +186,18 @@ const experiences = [
     projects: 'Contact me for details.',
   },
 ];
+
+const projects = [
+  {
+    id: 1,
+    name: 'CallCongress.How',
+    path: '/project/callcongress2/',
+    skills: [0,1,2,3,4,5,15],
+  },
+  {
+    id: 2,
+    name: 'Healthify',
+    path: '/project/healthify/',
+    skills: [0,1,2,4,5,14],
+  }
+];
