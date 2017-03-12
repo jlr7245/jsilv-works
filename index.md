@@ -7,8 +7,8 @@ title: "Home"
 order: 1
 ---
 
-J is a formally trained designer who decided to make the switch to development. Just as comfortable in JavaScript and CSS as she is in Sketch or Photoshop, she loves both designing the look and feel of a new project and building it out to its completion.
+I'm a formally trained designer who decided to make the switch to development. Just as comfortable in JavaScript and CSS as I am in Sketch or Photoshop, I love both designing the look and feel of a new project and building it out to its completion.
 
-She also loves mazes, maps, puzzles, science fiction, and her wife.
+I also love mazes, maps, puzzles, science fiction, and my wife.
 
-Currently, she's looking for the next challenge. Please feel free to get in touch with her.
+Currently, I'm looking for the next challenge. Please feel free to get in touch with me.
