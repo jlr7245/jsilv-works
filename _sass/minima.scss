@@ -26,7 +26,9 @@
 
 $base-font-family: "aktiv-grotesk", Helvetica, Arial, sans-serif;
 $header-f: 'romana_btroman', georgia, serif;
+.header-f {font-family: $header-f;}
 $header-b: 'romana_btbold', georgia, serif;
+.header-b {font-family: $header-b;}
 $monospace: 'pxplus-ibm-vga', operator mono, courier, mono;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
@@ -43,6 +45,9 @@ $brand-2:          #CBFDCA;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+
+.pxl {font-family: $monospace; color: $brand-color};
+
 
 // Width of the content area
 $content-width:    1500px !default;
@@ -245,6 +250,12 @@ dl dt {
     font-weight: 600;
 }
 
+.lgr {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: $header-b;
+}
+
 
 //================== RESUME
 
@@ -303,6 +314,8 @@ dl dt {
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   padding: 15px;
+  max-height: 300px;
+  overflow-y: scroll;
   .resitems {
     display: flex;
     flex-direction: column;
@@ -316,6 +329,10 @@ dl dt {
     font-family: $header-f;
     font-size: 1.5em;
   }
+}
+
+.about-content {
+  padding-right: 30px;
 }
 
 .details {
@@ -332,6 +349,15 @@ dl dt {
 .resitem {
   animation: resume-load 0.5s;
   margin-top: 15px;
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-size: 0.8em;
+      color: #555;
+    }
+  }
 }
 
 .about-container {

@@ -23,7 +23,10 @@ console.log('loaded');
     for (let experience of experiences) {
       if (experience.skills.indexOf(parseInt(i)) !== -1) {
         output += `<div class='resitem'>
+                    <div class='meta'>
                       <h3>${experience.name}</h3>
+                      <span class='dates'>${experience.start} - ${experience.end}</span>
+                    </div> 
                       <p>${experience.desc}</p>
                    </div>`;
       }
@@ -69,72 +72,72 @@ const skills = [
   {
     id: 6,
     name: 'Ruby',
-    desc: 'Ruby desc goes here'
+    desc: 'I love the elegance of Ruby -- the language seems to snap into place, like well-ordered building blocks.'
   },
   {
     id: 7,
     name: 'Ruby on Rails',
-    desc: 'Rails desc goes here',
+    desc: 'I have experience using Rails as a backend for both template-based and React sites.',
   },
   {
     id: 8,
     name: 'jQuery',
-    desc: 'jQuery desc goes here'
+    desc: `I've used jQuery many times over the years -- from my first attempts at using it to create sliders in Wordpress sites to building full-scale, jQuery-dependent interactive sites.`
   },
   {
     id: 9,
     name: 'Jekyll',
-    desc: 'Jekyll desc goes here'
+    desc: `The website you're viewing right now was built using Jekyll! I've also built other custom sites in Jekyll, and am familiar with the Siteleaf content management system.`
   },
   {
     id: 10,
     name: 'Liquid',
-    desc: 'Liquid desc goes here'
+    desc: `The site you're viewing right now was templated using Liquid!`
   },
   {
     id: 11,
     name: 'Wordpress',
-    desc: 'Wordpress desc goes here'
+    desc: `I've used Wordpress in some form or other nearly daily for the past five years. My art director position was at an agency that exclusively used Wordpress.`
   },
   {
     id: 12,
     name: 'SEO',
-    desc: 'SEO desc goes here'
+    desc: `I have experience writing SEO-optimized content and site metadata.`
   },
   {
     id: 13,
     name: 'Content Strategy',
-    desc: 'Content Strategy desc goes here'
+    desc: `I was responsible for the strategic creation and layout of content -- with attention paid both to the client's desired voice and the user's experience of the site -- in my previous few positions.`
   },
   {
     id: 14,
     name: 'Adobe Creative Suite',
-    desc: 'Adobe desc goes here'
+    desc: `If I could buy a lifetime membership for Adobe Creative Cloud, I would in a heartbeat. I can't remember a day in the past eight years where I haven't opened PhotoShop at least once.`
   },
   {
     id: 15,
     name: 'Sketch',
-    desc: 'Sketch desc goes here'
+    desc: `The self-portrait on the homepage of this site was drawn in Sketch. I also have experience creating mockups and wireframes.`
   },
   {
     id: 16,
     name: 'Art Direction',
-    desc: 'art direction desc goes here'
+    desc: `I was responsible for branding and imagery direction for major clients at my last position. Please feel free to contact me for examples of my work.`
   },
   {
     id: 17,
     name: 'Print Design',
-    desc: 'Print design description goes here'
+    desc: `I was responsible for design, illustration, layout, and printing of my school's literary journal. Since then, I've done print design multiple times for various clients, both personal and professional.`
   },
   {
     id: 18,
     name: 'Darkroom & Digital Photography',
-    desc: 'photo desc goes here'
+    desc: `Photography was one of my degree concentrations. Additionally, I've worked professionally as a photographer for a group of summer camps.`
   },
   {
     id: 29,
     name: 'Traditional Printmaking',
-    desc: 'Traditional printmaking desc goes here'
+    desc: `There's something about the process of creating a print edition -- cutting into a woodblock or drawing onto a stone, rolling ink onto a fresh surface, the repetitive motion of the press -- that I love.`
   }
 ];
 
@@ -146,7 +149,7 @@ const experiences = [
     skills: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 15],
     start: 'November 23, 2016',
     end: 'March 1, 2017',
-    desc: 'General Assembly desc goes here',
+    desc: `I took the General Assembly course out of frustration -- I worked with Wordpress every day in my previous positions, and I kept running into simple problems that I knew would be easily solvable if I only had the correct tools, so I decided to learn them. Once I started learning, however, I realized that coding is so much more than just a tool to fix problems. It's a medium that one can use for infinite creation.`,
     projects: [/* array of project IDs go here */]
   },
   {
@@ -155,7 +158,7 @@ const experiences = [
     skills: [0, 1, 2, 11, 13, 16, 17],
     start: 'January 2017',
     end: 'Ongoing',
-    desc: 'I stepped in as needed to help out at my former place of employment.',
+    desc: 'I stepped in as needed to help out at my former place of employment. Please contact me for more details about this.',
     projects: 'Contact me for details.',
   },
   {
@@ -164,7 +167,7 @@ const experiences = [
     skills: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 15],
     start: '',
     end: 'Ongoing',
-    desc: `I'm not happy unless I'm working to perfect something I've already completed or germinating a new idea.`,
+    desc: `I'm not happy unless I'm working to perfect something I've already completed or germinating a new idea. Currently I'm working on CallCongress.How, a site that allows constituents to keep track of thei representatives' contact information and legislative activity; Wireframer, a CSS/SCSS framework that accepts some command-line inputs; &Love, a wedding planning site for LGBT+ couples; and an open-source accessibility application.`,
     projects: []
   },
   {
@@ -173,7 +176,7 @@ const experiences = [
     skills: [0,1,8,11,12,13,14,16,17],
     start: 'August 2014',
     end: 'November 2016',
-    desc: `Worked closely with clients both large and small to create beautiful websites showcasing their businesses. Art directed major projects. Oversaw, trained, and instructed junior designers; worked closely with project managers; interviewed and liased with freelance developers and designers.`,
+    desc: `Worked closely with clients both large and small to create beautiful websites showcasing their businesses. Art directed major projects. Oversaw, trained, and instructed junior designers; worked closely with project managers; interviewed and liased with freelance developers and designers. Please contact me for project samples and additional information.`,
     projects: 'Contact me for details.',
   },
   {
@@ -182,7 +185,7 @@ const experiences = [
     skills: [0,1,11,12,13,14],
     start: 'September 2012',
     end: 'June 2014',
-    desc: 'Wrote, designed, and built websites using the Wordpress content management system and Bootstrap framework. Troubleshot existing sites using HTML and CSS. Assisted in search engine optimization and social marketing techniques. Created unique visual identites aimed at improving online presence.',
+    desc: 'Wrote, designed, and built websites using the Wordpress content management system and Bootstrap framework. Troubleshot existing sites using HTML and CSS. Assisted in search engine optimization and social marketing techniques. Created unique visual identites aimed at improving online presence. Please contact me for project samples and additional information.',
     projects: 'Contact me for details.',
   },
 ];
